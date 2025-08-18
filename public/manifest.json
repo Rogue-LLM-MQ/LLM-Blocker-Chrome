@@ -1,0 +1,11 @@
+{
+  "name": "LLM Blocker",
+  "description": "Detects and blocks usage of chatbots to combat shadow IT",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "vite.svg"
+  }
+}
