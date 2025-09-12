@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

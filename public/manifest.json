@@ -3,9 +3,12 @@
   "description": "Detects and blocks usage of chatbots to combat shadow IT",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["tabs"],
+  "permissions": ["tabs","storage"],
   "action": {
     "default_popup": "index.html",
     "default_icon": "vite.svg"
+  },
+  "storage": {
+    "managed_schema": "schema.json"
   }
 }
