@@ -3,12 +3,26 @@
   "description": "Detects and blocks usage of chatbots to combat shadow IT",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["tabs","storage"],
+  "permissions": [
+    "tabs",
+    "storage",
+    "declarativeNetRequest", 
+    "declarativeNetRequestFeedback",
+    "activeTab"
+  ],
   "action": {
     "default_popup": "index.html",
-    "default_icon": "vite.svg"
+    "default_title": "Rogue LLM Auditor"
   },
-  "storage": {
-    "managed_schema": "schema.json"
-  }
+  "host_permissions": ["*://*/*"],
+  "background": { 
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": { 
+    "rule_resources": [] 
+  },
+  "web_accessible_resources": [ { 
+    "resources": ["warning.html", "warning.js"], 
+    "matches": ["*://*/*"] 
+  } ]
 }
