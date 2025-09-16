@@ -1,0 +1,11 @@
+[
+  { "id": 101, "domain": "api.openai.com", "policy": "block", "provider": "OpenAI" },
+
+  { "id": 102, "domain": "api.anthropic.com", "policy": "block", "provider": "Anthropic Claude" },
+  { "id": 105, "domain": "claude.ai", "policy": "block", "provider": "Anthropic Claude" },
+
+  { "id": 103, "domain": "generativelanguage.googleapis.com", "policy": "warn", "provider": "Google Gemini" },
+  { "id": 106, "domain": "gemini.google.com", "policy": "warn", "provider": "Google Gemini" },
+
+  { "id": 104, "domain": "openrouter.ai", "policy": "allow", "provider": "OpenRouter" }
+]

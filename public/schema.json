@@ -4,8 +4,16 @@
     "domains": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "domain": { "type": "string" },
+          "policy": { "type": "string", "enum": ["allow", "warn", "block"] },
+          "provider": { "type": "string" }
+        },
+        "required": ["id", "domain", "policy", "provider"]
       }
     }
-  }
+  },
+  "required": ["domains"]
 }
